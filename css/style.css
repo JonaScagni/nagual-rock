@@ -9,7 +9,7 @@ body{
     color: aliceblue;
    font-family: 'Permanent Marker', cursive;
 }
-h1{
+h2{
     color: #b32121;
     font-size: 40px;
     text-align: center;
@@ -64,6 +64,7 @@ nav ul{
 nav ul li.active{
     background-color: #b32121;
     opacity: 5;
+    border-radius: 5px;
 }
     
 nav ul li{
@@ -141,106 +142,19 @@ border-radius: 5px;
   
 
 .formulario{
-   
+   display: flex;
+   flex-direction: column;
     color: #61a38d;
-        font-size: 200%;
+        font-size: 150%;
         font-weight: bold;
         margin: 10px;
-        padding: 5%;
+        padding: 20px;
         gap: 20px;
 }
-.discografia {
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(3,600px);
-    grid-template-areas: 
-    "d1 d2 "
-    "d3 d4" 
-    "d5 d5";    
-    color: #61a38d;
-   width: 100%;
-   height: 100%;
-    font-size: 20px;
-    image-orientation: from-image;
-    gap: 5px;
-    margin: 7%;
-    justify-items: auto;
-    justify-self: baseline;
-    
-}
-.discografia h2{
-    justify-content: center;
-}
-.discografia img{
-    display:flex;
-    justify-content: center;
-    align-self: start;
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-}
-.discografia ol{
-    width: 200%;
-    height: 100%;
-    text-align: center;
-}    
-.discografia ol li{
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  font-size: 70%;
-  width: 150%;
-  height: 40%;
-  
-    
-}
-
-
-.discografia h2{
+.etiqueta-form{
     display: flex;
-    flex-direction: row;
-    vertical-align: top;
-    text-align: center;
-    font-size: 20px;
-    color: #b32121;
-    font-weight: bold;
-    width: 100%;
-}
-
-.d1{
-    display: flex;    
-    width: 40%;
-    height: 100px;
-    justify-content: center;
-    
-}
-.d2 {
-    display: flex;    
-width: 40%;
-height: 100px;
-text-align: center;
-justify-content: center;
-}
-.d3{
-    display: flex;    
-    width: 40%;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
-}
-.d4{
-    display: flex;   
-    width: 40%;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
-}
-.d5{
-    display: flex;    
-    width: 40%;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
+   flex-direction: column;
+    gap: 20px;
 }
 .galeria{
     display: grid;
@@ -353,9 +267,23 @@ footer ul li a{
     width: 90%;
     padding: 10px;
 }
-
-footer ul{
+.galeria{
+    display: flex;
     flex-direction: column;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+   
+}
+.video iframe{
+    width: 90%;
+    height: 150px;
+    
+
+}
+footer ul{
+    flex-direction: row-reverse;
     
 }
 footer{
