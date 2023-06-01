@@ -1,0 +1,16 @@
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    color: #61a38d;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 20px;
+    gap: 20px;
+  }
+  .etiqueta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
