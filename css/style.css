@@ -6,7 +6,10 @@
 
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
   background-color: #0f0f0f;
   padding-top: 10px;
   padding: 5px;
@@ -16,7 +19,10 @@ footer {
 }
 footer ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
   list-style: none;
   padding: 5px;
   margin: 5px;
@@ -25,7 +31,6 @@ footer ul {
 footer a {
   text-decoration: none;
   color: #db5801;
-  display: flex;
   align-items: center;
 }
 
@@ -36,13 +41,11 @@ nav {
   margin: 1px;
 }
 nav ul {
-  display: flex;
   padding: 10px;
   list-style: none;
   justify-content: flex-end;
 }
 nav li {
-  display: flex;
   align-items: center;
   font-family: sans-serif;
   font-weight: bold;
@@ -51,8 +54,10 @@ nav li {
 }
 nav a {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+  gap: 15px;
   padding: 10px;
   margin: 2px;
   font-size: 40px;
@@ -154,7 +159,7 @@ nav ul li.active {
   object-fit: cover;
   padding: 0px;
   margin: 0%;
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: sticky;
 }
@@ -209,31 +214,38 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  heaeder {
-    flex-direction: column;
+  header {
+    flex-direction: row;
+    width: 100%;
   }
-  .logo {
-    flex-direction: column-reverse;
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 40%;
   }
   nav {
+    background-color: rgb(0, 0, 0);
     flex-direction: column;
     padding: 1px;
   }
   nav ul {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0%;
-    margin: 0%;
+    justify-content: flex-start;
+    padding: 1px;
   }
-  nav ul li {
+  nav li {
     flex-direction: column;
     align-self: flex-start;
   }
-  nav ul li a {
+  nav a {
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    font-size: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1px;
+    font-size: 5px;
     padding: 1px;
   }
   h1 {
@@ -249,7 +261,7 @@ header {
     padding: 10px;
   }
   .imagen-inicio {
-    width: 100%;
+    width: 90%;
   }
   .galeria {
     display: flex;
