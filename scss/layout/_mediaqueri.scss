@@ -1,20 +1,14 @@
-// media queris
+//media queri
 @media screen and (max-width: 576px) {
   header{
     flex-direction: row;
     width: 100%;         
   }
-    .navbar-brand {
-      display: flex; 
-      flex-direction: row;   
-      width: 50%;
-      height: 40%;
-      
-    }
+   
     nav{
-      background-color: rgb(0, 0, 0);
-      flex-direction: column;
+      background-color: rgb(0, 0, 0);     
       padding: 1px;
+      justify-content:flex-start;
     
       & ul{
         flex-direction: column;       
@@ -27,18 +21,16 @@
         align-self: flex-start;
       }
       & a {
-        @include flexbox(column, flex-start,center, 1px);
+        @include flexbox(column, flex-start,center, 1px,contents);
         font-size: 5px;        
         padding: 1px;
         }
-      }
-      
-    
+      }   
     h1 {
       text-align: start;
     }
     .inicio {
-      flex-direction: column-reverse;
+      flex-direction: column-reverse;      
     }
     .inicio p {
       font-size: 16px;
@@ -47,7 +39,10 @@
       padding: 10px;
     }
     .imagen-inicio{
-      width: 90%;
+      width: 80%;
+      align-items: center;
+      padding: 2px;
+      padding-left: 40px;
     }
     .galeria {
       display: flex;
@@ -61,6 +56,10 @@
       width: 90%;
       height: 150px;
     }
+    .card-fechas{
+      width: 70%;
+     }
+     
     footer ul {
       flex-direction: row-reverse;
     }

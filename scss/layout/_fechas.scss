@@ -1,3 +1,32 @@
 .fechas {
     width: 80%;
   }
+  .tarjeta{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+.card-fechas{  
+  color: $rojo;
+   background-image: radial-gradient(#0a0a0a,#030303);
+   height: 50%;
+   width: 40%;
+   gap: 15px;   
+   animation-name: animacion;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   animation-duration: 8s;
+   transform: translateX(0);   
+   & ul{
+    gap: 15px;
+   }  
+  }
+@keyframes animacion {
+  0% {
+      transform: translateX(-150%);
+      opacity: 0;
+  }
+  100% {    
+    opacity: 1;
+  }
+}

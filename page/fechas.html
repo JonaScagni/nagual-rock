@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <!--favicon-->    
+       <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+       <link rel="manifest" href="../favicon/site.webmanifest">
+       <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+       <meta name="msapplication-TileColor" content="#da532c">
+       <meta name="theme-color" content="#ffffff">
+             <!--seo-->
+           <meta name="description" content="fechas de los proximos recitales y eventos de nagual banda musical del under rock">
+           <meta name="keywords" content="nagual,rock,under,musica,fechas,recitales">
+           <!--cdn bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,15 +25,11 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Fechas</title>
   </head>
-  
+  <body>
     <header>
       <section>
         <nav class="navbar navbar-expand-lg navbar-bark">
-          <div class="container-fluid">
-            <div>
-              <a class="navbar-brand" href="#"
-                ><img src="../assets/logo.jpg" alt="logo"
-              /></a>
+          <div class="container">            
               <button
                 class="navbar-toggler"
                 type="button"
@@ -33,30 +41,21 @@
               >
                 <span class="navbar-toggler-icon navbar-dark"></span>
               </button>
+              <a class="navbar-brand" href="#"
+              ><img src="../assets/logo.jpg" alt="logo"
+            /></a>
             </div>
             <div class="collapse navbar-collapse text-right" id="navbarNav">
               <div>
                 <ul class="navbar-nav text-right">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="../index.html"
-                      >INICIO</a
-                    >
+                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      aria-current="page"
-                      href="./galeria.html"
-                      >GALERIA</a
-                    >
+                    <a class="nav-link" aria-current="page" href="./galeria.html">GALERIA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link " href="./discografia.html"
-                      >DISCOGRAFIA</a
-                    >
+                    <a class="nav-link " href="./discografia.html">DISCOGRAFIA</a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link" href="./fechas.html">FECHAS</a>
@@ -71,12 +70,12 @@
         </nav>
       </section>
     </header>
-    <div class="container">
+    <div class="container" >
     <main>
       <div class="my-5 text-center">
       <h2>F E C H A S</h2>
       </div>
-      
+      <!--carrusell de fechas-->
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Atención!</strong> Próxima fecha
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -85,16 +84,16 @@
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../assets/fechas1.jpg" class="d-block w-50" alt="fechas1">
+              <img src="../assets/fechas1.jpg" class="d-block w-50" alt="proximas fechas">
             </div>
             <div class="carousel-item">
-              <img src="../assets/fechas2.jpg" class="d-block w-50" alt="fecha2">
+              <img src="../assets/fechas2.jpg" class="d-block w-50" alt="fecha 13 de mayo, madyrock">
             </div>
             <div class="carousel-item">
-              <img src="../assets/fechas3.jpg" class="d-block w-50" alt="fecha3">
+              <img src="../assets/fechas3.jpg" class="d-block w-50" alt="fecha 29 de julio, teatro flores">
             </div>
             <div class="carousel-item">
-              <img src="../assets/fechas4.jpg" class="d-block w-50" alt="fecha4">
+              <img src="../assets/fechas4.jpg" class="d-block w-50" alt="fecha 10 de junio, reinasrock florencio varela">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -111,6 +110,26 @@
         <strong>Atención!</strong> Puntos de venta
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
+      <!--tarjeta de puntos de venta-->
+      <section class="tarjeta">
+        <div class="card-fechas card">
+          <h3>Puntos de venta</h3>
+          <ul>
+            <li>TEMPLO DEL MONO -- BOEDO</li>
+            <li>RIVADAVIA ROCK -- FLORESTA</li>
+            <li>LOCURAS -- MORON</li>
+            <li>BUHO -- SAN JUSTO</li>
+            <li>SHADOWS -- LAFERRERE</li>
+            <li>QUEELBACK -- MONTE GRANDE</li>
+            <li>QUEELBACK -- LOMAS</li>
+            <li>LA CUEVA -- LANUS</li>
+            <li>LA ESTAKA -- QUILMES</li>
+            <li>XENNON -- QUILMES</li>
+            <li>CULTURA LUTHIER -- FLORENCIO VARELA</li>
+            <li>GUIA MUSICAL -- LINIERS</li>
+          </ul>
+        </div>
+      </section>
       
     </main>
 
@@ -137,7 +156,7 @@
       </ul>
     </footer>
   </div>
-
+<!--script bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

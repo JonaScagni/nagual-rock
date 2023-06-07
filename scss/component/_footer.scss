@@ -1,5 +1,5 @@
 footer {
-    @include flexbox(row,center,center,10px);
+    @include flexbox(row,center,center,10px,flex);
     background-color: #0f0f0f;
     padding-top: 10px;
     padding: 5px;
@@ -8,7 +8,7 @@ footer {
     height: 100%;
 
     & ul {
-      @include flexbox(row,space-evenly,center,15px);
+      @include flexbox(row,space-evenly,center,15px,flex);
       list-style: none;
       padding: 5px;
       margin: 5px;

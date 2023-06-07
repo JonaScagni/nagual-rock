@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
-footer {
+.card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border: solid 2px #d30606;
+  border-radius: 15%;
+  padding: 5px;
+}
+
+footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  display: flex;
   background-color: #0f0f0f;
   padding-top: 10px;
   padding: 5px;
@@ -18,11 +29,11 @@ footer {
   height: 100%;
 }
 footer ul {
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 15px;
+  display: flex;
   list-style: none;
   padding: 5px;
   margin: 5px;
@@ -53,11 +64,11 @@ nav li {
   margin: 1px;
 }
 nav a {
-  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
+  display: flex;
   padding: 10px;
   margin: 2px;
   font-size: 40px;
@@ -90,7 +101,6 @@ nav ul li.active {
 }
 
 .navbar {
-  width: 100%;
   height: 100%;
 }
 
@@ -121,6 +131,37 @@ nav ul li.active {
   width: 80%;
 }
 
+.tarjeta {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card-fechas {
+  color: #d30606;
+  background-image: radial-gradient(#0a0a0a, #030303);
+  height: 50%;
+  width: 40%;
+  gap: 15px;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  transform: translateX(0);
+}
+.card-fechas ul {
+  gap: 15px;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .galeria {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -152,24 +193,13 @@ nav ul li.active {
   height: 300px;
 }
 
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  object-fit: cover;
-  padding: 0px;
-  margin: 0%;
-  width: 80%;
-  height: 100%;
-  position: sticky;
-}
-
 .imagen-inicio {
   display: flex;
   justify-content: center;
   border-radius: 100%;
   width: 100%;
   height: 100%;
+  padding: 10px;
 }
 
 .inicio {
@@ -192,6 +222,20 @@ nav ul li.active {
   padding: 10px;
   margin: 10px;
   color: #0d6440;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  transform: translateX(0);
+}
+@keyframes animacion {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -218,16 +262,10 @@ header {
     flex-direction: row;
     width: 100%;
   }
-  .navbar-brand {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 40%;
-  }
   nav {
     background-color: rgb(0, 0, 0);
-    flex-direction: column;
     padding: 1px;
+    justify-content: flex-start;
   }
   nav ul {
     flex-direction: column;
@@ -240,11 +278,11 @@ header {
     align-self: flex-start;
   }
   nav a {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 1px;
+    display: contents;
     font-size: 5px;
     padding: 1px;
   }
@@ -261,7 +299,10 @@ header {
     padding: 10px;
   }
   .imagen-inicio {
-    width: 90%;
+    width: 80%;
+    align-items: center;
+    padding: 2px;
+    padding-left: 40px;
   }
   .galeria {
     display: flex;
@@ -274,6 +315,9 @@ header {
   .video iframe {
     width: 90%;
     height: 150px;
+  }
+  .card-fechas {
+    width: 70%;
   }
   footer ul {
     flex-direction: row-reverse;

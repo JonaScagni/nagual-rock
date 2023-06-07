@@ -1,9 +1,21 @@
 //mixin
-@mixin flexbox ($direction,$justify,$aling,$gap)
+@mixin flexbox ($direction,$justify,$aling,$gap,$display)
 {
-    display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $aling;
     gap: $gap;
+    display: $display;
+}
+//extend
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: solid 2px $rojo;
+    border-radius: 15%;
+    padding: 5px;
+       
 }
