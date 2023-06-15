@@ -1,16 +1,25 @@
 
 .formulario {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;   
+    margin: 2px;
+    padding: 15px;   
+    height: 400px;
+    gap: 10px;
+  }
+  .etiqueta-form {
     color: #61a38d;
     font-size: 150%;
     font-weight: bold;
-    margin: 10px;
-    padding: 20px;
-    gap: 20px;
-  }
-  .etiqueta-form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 40%;
+  }
+  .imagen-contacto{
+    display: flex;    
+    justify-content:right;    
+    max-width: 850px;
+    object-fit: cover;    
   }
